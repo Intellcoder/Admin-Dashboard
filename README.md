@@ -31,7 +31,9 @@ _(Replace `demo.gif` with an actual animated preview of your dashboard)_
 | Light Mode | Dark Mode |
 |------------|-----------|
 
-| ![Light Screenshot](screenshots/light.png) | ![Dark Screenshot](screenshots/dark.png) |
+| ![Light Screenshot](screenshot<img width="448" height="280" alt="Macbook-Air-localhost (4)" src="https://github.com/user-attachments/assets/30adba48-cffa-4484-a110-703b7c4879ed" />
+s/light.png) | ![Dark Screenshot](screenshots/<img width="645" height="403" alt="Macbook-Air-localhost (3)" src="https://github.com/user-attachments/assets/f57a604e-fb36-4ec9-ad5a-79105ce383cf" />
+dark.png) |
 
 ---
 
