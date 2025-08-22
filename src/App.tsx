@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
-import { ThemeProvider } from "./utils/theme";
 import Geography from "./pages/Geography";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";

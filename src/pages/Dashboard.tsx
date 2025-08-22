@@ -13,9 +13,8 @@ import { mockTransactions } from "../data/data";
 import BarChart from "../components/BarChart";
 import GeoChart from "../components/GeoChart";
 import ProgressCircle from "../components/ProgressCircle";
-type Props = {};
 
-const Dashboard = (props: Props) => {
+const Dashboard = () => {
   return (
     <div className="p-1 pb-5">
       <div className="flex justify-between">

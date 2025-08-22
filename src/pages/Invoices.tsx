@@ -4,9 +4,7 @@ import LinkDisplay from "../components/LinkDisplay";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-type Props = {};
-
-const Invoices = (props: Props) => {
+const Invoices = () => {
   const colors = {
     greenAccent: {
       100: "#4cceac",

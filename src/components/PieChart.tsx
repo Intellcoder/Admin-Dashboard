@@ -1,9 +1,7 @@
 import { ResponsivePie } from "@nivo/pie";
 import { mockPieData as data } from "../data/data";
 
-type Props = {};
-
-const PieChart = (props: Props) => {
+const PieChart = () => {
   const colors = {
     grey: "#e0e0e0",
   };

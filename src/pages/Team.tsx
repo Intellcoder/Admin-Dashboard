@@ -2,17 +2,9 @@ import { mockDataTeam } from "../data/data";
 import LinkDisplay from "../components/LinkDisplay";
 import type { GridColDef } from "@mui/x-data-grid";
 import { DataGrid } from "@mui/x-data-grid";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
-import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
-import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
+import AccessBadge from "../components/AccessBadge";
 
-type Props = {};
-
-const Team = (props: Props) => {
-  const row = ["access"];
-
+const Team = () => {
   const colors = {
     greenAccent: {
       100: "#4cceac",
@@ -36,7 +28,7 @@ const Team = (props: Props) => {
     },
   };
 
-  const columns: GridColDef<(typeof rows)[number]>[] = [
+  const columns: GridColDef[] = [
     { field: "id", headerName: "ID" },
     {
       field: "name",
@@ -65,60 +57,8 @@ const Team = (props: Props) => {
       field: "accessLevel",
       headerName: "Access Level",
       flex: 1,
-      renderCell: ({ row: { access } }) => {
-        return (
-          <Box
-            component={"button"}
-            sx={{
-              "& .MuiDataGrid-root": {
-                border: "none",
-              },
-              "& .MuiDataGrid-cell": {
-                borderBottom: "none",
-              },
-              "& .MuiDataGrid-columnHeader": {
-                backgroundColor: colors.blueAccent[700],
-                border: "none",
-              },
-              "& .name-column--cell": {
-                color: colors.greenAccent[100],
-              },
-
-              "& .MuiDataGrid-virtualScroller": {
-                backgroundColor: colors.primary[400],
-              },
-              "& .MuiDataGrid-footerContainer": {
-                borderTop: "none",
-                color: colors.primary[100],
-                backgroundColor: colors.blueAccent[700],
-              },
-
-              "& .MuiCheckbox-root": {
-                color: `${colors.greenAccent[200]} !important`,
-              },
-            }}
-            width="60%"
-            m="0 auto"
-            p="5px"
-            display="flex"
-            justifyContent="center"
-            backgroundColor={
-              access === "admin"
-                ? colors.greenAccent[600]
-                : access === "manager"
-                ? colors.greenAccent[700]
-                : colors.greenAccent[700]
-            }
-            borderRadius="4px"
-          >
-            {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
-            {access === "manager" && <SecurityOutlinedIcon />}
-            {access === "user" && <LockOpenOutlinedIcon />}
-            <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
-              {access}
-            </Typography>
-          </Box>
-        );
+      renderCell: (params) => {
+        return <AccessBadge access={params.value} colors={colors} />;
       },
     },
   ];

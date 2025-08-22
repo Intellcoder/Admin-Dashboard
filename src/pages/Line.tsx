@@ -1,10 +1,7 @@
-import React from "react";
 import LinkDisplay from "../components/LinkDisplay";
 import LineChart from "../components/LineChart";
 
-type Props = {};
-
-const Line = (props: Props) => {
+const Line = () => {
   return (
     <div className="h-full">
       <LinkDisplay title="Line Chart" text="Simple Line Chart" />

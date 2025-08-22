@@ -4,7 +4,6 @@ import type {
   DateSelectArg,
   EventApi,
   EventClickArg,
-  EventContentArg,
 } from "@fullcalendar/core";
 import { INITIAL_EVENTS, createEventId } from "../utils/event-utils";
 import dayGridPlugin from "@fullcalendar/daygrid";
@@ -15,9 +14,7 @@ import Typography from "@mui/material/Typography";
 import EventList from "../components/EventList";
 import LinkDisplay from "../components/LinkDisplay";
 
-type Props = {};
-
-const Calendar = (props: Props) => {
+const Calendar = () => {
   const [CurrentEvents, setCurrentEvents] = useState<EventApi[]>([]);
   const [calendarView, setCalendarView] = useState("dayGridMonth");
   const handleDateClick = (selected: DateSelectArg) => {
@@ -35,6 +32,7 @@ const Calendar = (props: Props) => {
       });
     }
   };
+  console.log(calendarView);
 
   const handleEventClick = (clickInfo: EventClickArg) => {
     if (

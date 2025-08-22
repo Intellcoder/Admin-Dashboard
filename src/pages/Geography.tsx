@@ -1,9 +1,7 @@
 import GeoChart from "../components/GeoChart";
 import LinkDisplay from "../components/LinkDisplay";
 
-type Props = {};
-
-const Geography = (props: Props) => {
+const Geography = () => {
   return (
     <div className="h-full ">
       <LinkDisplay title="Geography" text="Simple Geography Chart" />

@@ -5,9 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import { GridExpandMoreIcon } from "@mui/x-data-grid";
 import Typography from "@mui/material/Typography";
 
-type Props = {};
-
-const Faq = (props: Props) => {
+const Faq = () => {
   const colors = {
     primary: "#1f2a40",
   };

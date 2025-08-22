@@ -2,9 +2,7 @@ import { useState, type ChangeEvent } from "react";
 import LinkDisplay from "../components/LinkDisplay";
 import InputBox from "../components/InputBox";
 
-type Props = {};
-
-const Profile = (props: Props) => {
+const Profile = () => {
   const [userDetails, setUserDetails] = useState({
     firstName: "",
     lastName: "",

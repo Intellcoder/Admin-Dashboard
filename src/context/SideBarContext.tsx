@@ -1,7 +1,5 @@
 import { createContext, useContext, useState } from "react";
 
-type Props = {};
-
 const SideBarContext = createContext({
   isOpen: true,
   toggle: () => {},

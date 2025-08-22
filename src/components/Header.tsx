@@ -8,9 +8,7 @@ import { useSidebar } from "../context/SideBarContext";
 import { useTheme } from "../utils/theme";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   const { toggle } = useSidebar();
   const { theme, toggleTheme } = useTheme();
   return (

@@ -1,8 +1,6 @@
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import ProgressCircle from "./ProgressCircle";
 import type { ReactElement } from "react";
-import Icon from "@mui/material/Icon";
 
 type Props = {
   progress: number;

@@ -1,9 +1,8 @@
 import LinkDisplay from "../components/LinkDisplay";
-import { DataGrid, Toolbar, ToolbarButton } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
 import type { GridColDef } from "@mui/x-data-grid";
 import { mockDataContacts } from "../data/data";
 
-type Props = {};
 const colors = {
   grey: "#c2c2c2",
   greenAccent300: "#94e2cd",
@@ -11,7 +10,7 @@ const colors = {
   blueAccent: "#3e4396",
   background: "#1f2a40",
 };
-const columns: GridColDef<(typeof rows)[number]>[] = [
+const columns: GridColDef[] = [
   { field: "id", headerName: "ID", flex: 0.5 },
   { field: "registrarId", headerName: "Registrar ID" },
   {
@@ -54,7 +53,7 @@ const columns: GridColDef<(typeof rows)[number]>[] = [
   },
 ];
 
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
     <div className="">
       <LinkDisplay

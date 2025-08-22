@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import type { sideBarItemProps } from "../types";
