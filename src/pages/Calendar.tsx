@@ -16,7 +16,7 @@ import LinkDisplay from "../components/LinkDisplay";
 
 const Calendar = () => {
   const [CurrentEvents, setCurrentEvents] = useState<EventApi[]>([]);
-  const [calendarView, setCalendarView] = useState("dayGridMonth");
+  const [, setCalendarView] = useState("dayGridMonth");
   const handleDateClick = (selected: DateSelectArg) => {
     const title = prompt("Please enter a new title for your events");
     const calendarApi = selected.view.calendar;
@@ -32,7 +32,6 @@ const Calendar = () => {
       });
     }
   };
-  console.log(calendarView);
 
   const handleEventClick = (clickInfo: EventClickArg) => {
     if (
