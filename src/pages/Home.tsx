@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div
       className={`flex h-screen overflow-scroll  no-scrollbar ${
-        theme === "dark" ? "bg-light-00" : "bg-primary-700"
+        theme === "dark" ? "bg-light-400" : "bg-primary-700"
       }`}
     >
       <SideBar />

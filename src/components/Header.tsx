@@ -26,7 +26,11 @@ const Header = () => {
         <SearchIcon sx={{ color: "white" }} />
       </div>
       {/*icons*/}
-      <div className=" hidden md:flex dark:text-light-400 pl-2 pr-2 md:w-[18%]  justify-between">
+      <div
+        className={`hidden md:flex dark:text-light-400 pl-2 pr-2 md:w-[18%]  justify-between ${
+          theme === "dark" ? "bg-primary-500" : "bg-inherit"
+        }`}
+      >
         <button onClick={toggleTheme}>
           {theme === "dark" ? <NightlightIcon /> : <Brightness4Icon />}
         </button>
