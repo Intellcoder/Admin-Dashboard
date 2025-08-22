@@ -20,7 +20,7 @@ const Dashboard = () => {
       <div className="flex justify-between">
         <LinkDisplay title="DASHBOARD" text="Welcome to your dashboard" />
         <div className="flex items-center">
-          <button className="dark:text-light-400 dark:bg-blueAccent-700 p-1 rounded-[2px]">
+          <button className="text-light-400 bg-blueAccent-700 p-1 rounded-[2px]">
             <DownloadIcon />
             DOWNLOAD REPORTS
           </button>
@@ -96,7 +96,7 @@ const Dashboard = () => {
           </span>
         </div>
         <div className="h-[250px] dark:bg-primary-400 p-2 mt-2 ">
-          <Typography className="dark:text-grey-200 text-h2">
+          <Typography className="text-grey-200 text-h2">
             Sales Quantity
           </Typography>
           <BarChart isDashboard={true} />

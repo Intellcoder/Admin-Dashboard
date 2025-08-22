@@ -48,7 +48,7 @@ const SideBar = () => {
 
   return (
     <aside
-      className={`w-[50%] z-50 overflow-y-scroll fixed h-screen  md:flex bg-light-400 dark:bg-primary-400  p-2 md:w-[20%] no-scrollbar pr-4 ${
+      className={`w-[50%] z-50 overflow-y-scroll fixed h-screen  md:flex  bg-primary-400  p-2 md:w-[20%] no-scrollbar pr-4 ${
         isOpen ? "flex" : "hidden"
       }`}
     >

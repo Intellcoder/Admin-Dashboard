@@ -18,7 +18,7 @@ const Calendar = () => {
   const [CurrentEvents, setCurrentEvents] = useState<EventApi[]>([]);
   const [, setCalendarView] = useState("dayGridMonth");
   const handleDateClick = (selected: DateSelectArg) => {
-    const title = prompt("Please enter a new title for your events");
+    const title = window.prompt("Please enter a new title for your events");
     const calendarApi = selected.view.calendar;
     calendarApi.unselect();
 
