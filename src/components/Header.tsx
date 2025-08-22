@@ -27,16 +27,18 @@ const Header = () => {
       </div>
       {/*icons*/}
       <div
-        className={`hidden md:flex dark:text-light-400 pl-2 pr-2 md:w-[18%]  justify-between ${
+        className={` md:flex dark:text-light-400 pl-2 pr-2 md:w-[18%]   ${
           theme === "dark" ? "bg-primary-500" : "bg-inherit"
         }`}
       >
-        <button onClick={toggleTheme}>
+        <button className="mr-4" onClick={toggleTheme}>
           {theme === "dark" ? <NightlightIcon /> : <Brightness4Icon />}
         </button>
-        <NotificationsIcon />
-        <SettingsIcon />
-        <PersonOutlineIcon />
+        <div className="hidden md:flex justify-between w-[70%] ">
+          <NotificationsIcon />
+          <SettingsIcon />
+          <PersonOutlineIcon />
+        </div>
       </div>
     </nav>
   );
