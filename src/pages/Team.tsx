@@ -58,7 +58,7 @@ const Team = () => {
       headerName: "Access Level",
       flex: 1,
       renderCell: (params) => {
-        return <AccessBadge access={params.value} colors={colors} />;
+        return <AccessBadge access={params.row.access} colors={colors} />;
       },
     },
   ];
