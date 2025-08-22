@@ -14,15 +14,23 @@ It provides **data visualization, scheduling, and a clean UI** for managing anal
 
 ## 🎥 Demo Preview
 
-![Dashboard Demo](demo.gif)  
+![Dashboard Demo](demo.gif)
+
+_(Replace `demo.gif` with an actual animated preview of your dashboard)_
+
 _(Replace `demo.gif` with an actual animated preview of your dashboard)_
 
 ---
 
 ## 📸 Screenshots
 
-| Light Mode                                 | Dark Mode                                |
-| ------------------------------------------ | ---------------------------------------- |
+| Light Mode | Dark Mode |
+| ---------- | --------- |
+
+=======
+| Light Mode | Dark Mode |
+|------------|-----------|
+
 | ![Light Screenshot](screenshots/light.png) | ![Dark Screenshot](screenshots/dark.png) |
 
 ---
@@ -44,6 +52,9 @@ _(Replace `demo.gif` with an actual animated preview of your dashboard)_
 - **Material UI (MUI)** – Design system & components
 - **Nivo** – Chart visualizations
 - **FullCalendar** – Calendar scheduling
+
+- **Vite / CRA** – Development environment _(update if needed)_
+
 - **Vite / CRA** – Development environment _(update if needed)_
 
 ---
@@ -62,4 +73,5 @@ npm install
 
 # Start the development server
 npm run dev
+
 ```
