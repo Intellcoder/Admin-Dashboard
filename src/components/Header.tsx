@@ -14,8 +14,12 @@ const Header = () => {
   return (
     <nav className=" pb-6 flex justify-between mt-3 p-2">
       {/*searchbar*/}
-      <button onClick={toggle} className="md:hidden bg-blue-500">
-        <MenuOutlinedIcon className="bg-blue-500 md:hidden" />
+      <button onClick={toggle} className="">
+        <MenuOutlinedIcon
+          className={` md:hidden ${
+            theme === "dark" ? "text-black" : "text-light-400"
+          }`}
+        />
       </button>
       <div className="dark:bg-primary-400 pl-1 pr-1 md:w-[20%] flex overflow-hidden">
         <input

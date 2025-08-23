@@ -16,7 +16,7 @@ const LinkDisplay = ({ title, text }: Props) => {
       >
         {title}
       </h1>
-      <Typography className="dark:text-greenAccent-500">{text}</Typography>
+      <Typography className="text-greenAccent-500">{text}</Typography>
     </div>
   );
 };
