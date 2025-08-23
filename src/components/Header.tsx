@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <nav className=" pb-6 flex justify-between mt-3 p-2">
       {/*searchbar*/}
-      <button onClick={toggle} className="">
+      <button onClick={toggle} className="mr-2">
         <MenuOutlinedIcon
           className={` md:hidden ${
             theme === "dark" ? "text-black" : "text-light-400"

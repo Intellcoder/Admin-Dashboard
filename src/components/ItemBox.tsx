@@ -12,7 +12,7 @@ type Props = {
 
 const ItemBox = ({ progress, title, total, increase, icon }: Props) => {
   return (
-    <div className=" dark:bg-primary-400 p-2 w-full rounded-[2px] mb-2">
+    <div className="bg-primary-400 p-2 w-full rounded-[2px] mb-2">
       <div className="flex justify-between ">
         <div>
           <span className="text-greenAccent-600 ">{icon}</span>

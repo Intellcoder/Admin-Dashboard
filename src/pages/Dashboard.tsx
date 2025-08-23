@@ -57,7 +57,7 @@ const Dashboard = () => {
         />
       </div>
       <div className="lg:grid grid-cols-[70%_30%] gap-2 ">
-        <div className="h-[250px] min-w-full dark:bg-primary-400">
+        <div className="h-[250px] min-w-full bg-primary-400">
           <Line isDashBoard={true} />
         </div>
         <div className="h-[250px] overflow-auto  ">
@@ -95,7 +95,7 @@ const Dashboard = () => {
             </Typography>
           </span>
         </div>
-        <div className="h-[250px bg-primary-400 p-2 mt-2 ">
+        <div className="h-[250px] bg-primary-400 p-2 mt-2 ">
           <Typography className="text-grey-200 text-h2">
             Sales Quantity
           </Typography>
