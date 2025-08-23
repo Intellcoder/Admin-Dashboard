@@ -18,7 +18,6 @@ const InputBox = ({ placeholder, name, onchange, value }: Props) => {
         onChange={onchange}
         className={`bg-primary-400 text-grey-200 p-1 min-w-full rounded-[5px]`}
       />
-      ;
     </div>
   );
 };

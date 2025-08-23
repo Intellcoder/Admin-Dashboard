@@ -32,7 +32,7 @@ const Header = () => {
       {/*icons*/}
       <div
         className={` md:flex text-light-400 pl-2 pr-2 md:w-[18%]   ${
-          theme === "dark" ? "bg-primary-500" : "bg-inherit"
+          theme === "dark" ? "bg-primary-700 sm:ml-2" : "bg-inherit sm:ml-2 "
         }`}
       >
         <button className="mr-4" onClick={toggleTheme}>
