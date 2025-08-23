@@ -21,7 +21,7 @@ const Header = () => {
           }`}
         />
       </button>
-      <div className="dark:bg-primary-400 pl-1 pr-1 md:w-[20%] flex overflow-hidden">
+      <div className="bg-primary-400 pl-1 pr-1 md:w-[20%] flex overflow-hidden">
         <input
           type="text"
           placeholder="Search"
@@ -31,7 +31,7 @@ const Header = () => {
       </div>
       {/*icons*/}
       <div
-        className={` md:flex dark:text-light-400 pl-2 pr-2 md:w-[18%]   ${
+        className={` md:flex text-light-400 pl-2 pr-2 md:w-[18%]   ${
           theme === "dark" ? "bg-primary-500" : "bg-inherit"
         }`}
       >

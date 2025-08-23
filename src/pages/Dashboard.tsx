@@ -61,7 +61,7 @@ const Dashboard = () => {
           <Line isDashBoard={true} />
         </div>
         <div className="h-[250px] overflow-auto  ">
-          <Box className="dark:bg-primary-400 w-full p-2 mt-1">
+          <Box className="bg-primary-400 w-full p-2 mt-1">
             <Typography className="text-gray-100 text-h5 text-center">
               Recent Transaction
             </Typography>
@@ -80,7 +80,7 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="lg:grid grid-cols-3  mt-3 gap-2">
-        <div className="h-[250px]   dark:bg-primary-400 mt-2 p-2">
+        <div className="h-[250px]  bg-primary-400 mt-2 p-2">
           <Typography className="text-grey-200 font-source">
             Campaign
           </Typography>
@@ -95,13 +95,13 @@ const Dashboard = () => {
             </Typography>
           </span>
         </div>
-        <div className="h-[250px] dark:bg-primary-400 p-2 mt-2 ">
+        <div className="h-[250px bg-primary-400 p-2 mt-2 ">
           <Typography className="text-grey-200 text-h2">
             Sales Quantity
           </Typography>
           <BarChart isDashboard={true} />
         </div>
-        <div className="h-[250px] overflow-auto dark:bg-primary-400 p-2 no-scrollbar mt-2">
+        <div className="h-[250px] overflow-auto bg-primary-400 p-2 no-scrollbar mt-2">
           <Typography className="text-grey-200 p-2">
             Geography Based Traffic
           </Typography>
